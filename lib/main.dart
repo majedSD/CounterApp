@@ -36,7 +36,9 @@ InputChange(Key,Value){
   });
 }
   addValue(){
-     sum=InputNum['Num1']!+InputNum['Num2']!+InputNum['Num3']!;
+  setState(() {
+    sum=InputNum['Num1']!+InputNum['Num2']!+InputNum['Num3']!;
+  });
   }
   @override
   Widget build(BuildContext context) {
